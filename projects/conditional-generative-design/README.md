@@ -2,11 +2,11 @@
 
 ## Problem
 
-Learn a conditional latent representation of Fashion-MNIST images and inspect how labels influence generated samples.
+I trained a model to generate Fashion-MNIST-like images while controlling the class label, then looked at how the label changed the output.
 
 ## Approach
 
-The workflow normalises images, encodes class labels, trains a convolutional conditional variational autoencoder, and inspects latent structure with PCA and t-SNE. Fixed latent vectors are decoded across label conditions to make condition-dependent changes visible.
+I normalised the images, encoded the labels, and trained a convolutional conditional VAE. I used PCA and t-SNE to look at the latent space, then decoded the same latent vectors with different labels to see the change.
 
 ## Skills
 
@@ -17,12 +17,12 @@ The workflow normalises images, encodes class labels, trains a convolutional con
 
 ## Source and data
 
-Fashion-MNIST is loaded through the Keras dataset interface. No local training cache or serialized weights are included; obtain data through the documented loader.
+I load Fashion-MNIST through Keras. I left out local caches and trained weights; the data can be downloaded through the loader.
 
 ## Reproduce
 
-Create the documented Python environment, download Fashion-MNIST through Keras on first run, set a fixed seed, and execute the compact training configuration. Save generated grids as new artefacts rather than relying on local cache files.
+Create the Python environment, let Keras download Fashion-MNIST on the first run, set the seed, and train the smaller configuration. Save fresh image grids instead of relying on files from my machine.
 
 ## Limits
 
-Generated images are exploratory samples, not production-ready designs. Visual quality depends on training duration, architecture, random seed, class balance, and hardware; sample grids alone do not establish generalisation.
+The generated images are for exploration, not finished designs. Quality changes with training time, model shape, seed, class balance, and hardware. A few good-looking grids do not prove the model generalises.

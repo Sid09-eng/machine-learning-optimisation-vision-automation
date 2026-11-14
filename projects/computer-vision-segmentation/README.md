@@ -2,11 +2,11 @@
 
 ## Problem
 
-Build an interpretable image-segmentation pipeline that improves raw thresholding before contour analysis.
+I built a simple segmentation pipeline to clean up a thresholded image before counting its contours.
 
 ## Approach
 
-The pipeline reads an image, applies Gaussian blur, derives an Otsu threshold, and uses morphological opening and closing to remove noise and repair regions. It then finds and draws contours so each processing stage can be inspected.
+The code reads an image, applies Gaussian blur, calculates an Otsu threshold, then uses opening and closing to remove noise and repair regions. It draws the final contours so I can see what each step changed.
 
 ## Skills
 
@@ -17,12 +17,12 @@ The pipeline reads an image, applies Gaussian blur, derives an Otsu threshold, a
 
 ## Source and data
 
-The original local image is deliberately excluded because redistribution rights have not been established. The public workflow accepts a user-provided image and records its expected format.
+I have not included the original image because I do not know whether it can be redistributed. The script takes a user-provided image and states what format it expects.
 
 ## Reproduce
 
-Install OpenCV from the root dependency list, supply an image path, then run each stage in sequence. Review intermediate masks before interpreting the final contour count.
+Install OpenCV from the root dependency list, give the script an image path, then check the masks before treating the contour count as meaningful.
 
 ## Limits
 
-Thresholds and morphology settings are image-dependent. The method is a transparent baseline, not a universal semantic-segmentation system; changing lighting, background, or object scale may require retuning.
+The threshold and morphology settings depend on the image. This is a simple, inspectable method, not a universal semantic-segmentation model. Different lighting, backgrounds, or object sizes may need new settings.

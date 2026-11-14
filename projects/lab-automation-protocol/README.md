@@ -2,11 +2,11 @@
 
 ## Problem
 
-Define a repeatable two-row colour-gradient liquid-handling protocol for a 96-well plate.
+I wrote a two-row colour-gradient protocol for a 96-well plate.
 
 ## Approach
 
-Four source colours are dispensed across one row using explicit per-well volumes; a second row is filled in reverse order to create a mirrored gradient. One tip is used per source colour to reduce source carryover, and every target well totals 250 µL.
+Four source colours fill the first row with set volumes. The second row runs in reverse to create the mirror image. I use one tip per colour to reduce carryover, and every well receives 250 µL in total.
 
 ## Skills
 
@@ -17,12 +17,12 @@ Four source colours are dispensed across one row using explicit per-well volumes
 
 ## Source and data
 
-The protocol logic is authored for the Opentrons API using named standard labware definitions. No proprietary experimental results or hardware logs are included.
+I wrote the protocol against the Opentrons API using named standard labware. It does not include private results or hardware logs.
 
 ## Reproduce
 
-Review deck, labware, pipette, reservoir, and starting-tip assumptions in the project protocol. Validate in the Opentrons simulator and perform local laboratory safety review before any physical run.
+Check the deck, labware, pipette, reservoir, and starting-tip settings in the protocol. Run the Opentrons simulator and complete local safety checks before using a robot.
 
 ## Limits
 
-This code defines a transfer plan; it does not prove a successful physical run. Labware calibration, reagent compatibility, robot configuration, tip availability, and laboratory approval remain required.
+The code describes transfers; it does not prove that a robot run succeeded. Labware calibration, reagent compatibility, robot setup, tips, and lab approval still matter.

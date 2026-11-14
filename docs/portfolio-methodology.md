@@ -1,20 +1,20 @@
-# Portfolio Methodology
+# How I Review This Repository
 
-## Curation standard
+## What I put here
 
-Each visible project is derived from a local working artefact, then rewritten as a concise technical case study. Only reviewed code, figures, prose, and claims are eligible for version control.
+Each project starts from work I have already done locally. Before sharing it, I clean up the code, remove private files, and check that the explanation matches what the work actually does.
 
-## Evidence standard
+## What I check
 
-- Metrics must come from committed, reproducible output.
-- External data and packages must be attributed in the relevant project page.
-- API-backed work must document an offline or opt-in path.
-- Images and model files require provenance and size review before inclusion.
+- A metric must come from saved output that someone else can inspect.
+- The project page names the data and packages I used.
+- If something needs an API, I explain how to run it without exposing a key.
+- I check image and model-file sources before adding them.
 
-## Safety standard
+## What stays local
 
-Private configuration, credentials, caches, local environments, raw course material, and unreviewed generated artefacts are ignored before staging. The staged file list is scanned before each release.
+Configuration files, credentials, caches, local environments, raw study material, and unchecked generated files stay on my machine. I inspect the staged file list before each release.
 
-## Scope statement
+## What these projects do not prove
 
-These case studies demonstrate methods and implementation decisions. They do not claim laboratory validation, commercial deployment, or performance outside documented evaluation conditions.
+They show how I approached a problem and wrote the code. They do not prove lab validation, commercial deployment, or results outside the conditions I tested.

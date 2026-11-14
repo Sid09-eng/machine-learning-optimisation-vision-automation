@@ -2,11 +2,11 @@
 
 ## Problem
 
-Tune a concrete-compressive-strength regressor with Bayesian optimisation while keeping evaluation separate from tuning decisions.
+I used Bayesian optimisation to tune a concrete-compressive-strength model without using the test set to guide the search.
 
 ## Approach
 
-The case study prepares tabular mix-design features, establishes baseline regression models, and uses a Gaussian-process-guided search to tune a gradient-boosting model. Experiment settings compare acquisition strategies and kernel choices instead of treating optimisation as a black box.
+I prepared mix-design features, trained a few baseline regressors, then used a Gaussian-process search to tune gradient boosting. I compared acquisition choices and kernel settings instead of relying on one default search setup.
 
 ## Skills
 
@@ -17,12 +17,12 @@ The case study prepares tabular mix-design features, establishes baseline regres
 
 ## Source and data
 
-The workflow uses the UCI Concrete Compressive Strength data supplied with the local study materials. The public version credits the dataset source and documents expected columns before publishing any redistributed copy.
+I used the UCI Concrete Compressive Strength data provided with my local files. Before sharing a data copy, I will confirm the source details and list the expected columns.
 
 ## Reproduce
 
-Install dependencies listed at repository root, provide the documented concrete data file, and run the project workflow with its fixed split seed. Compare baseline and tuned models only on the held-out evaluation partition.
+Install the root dependencies, add the concrete data file described here, and run with the fixed split seed. Compare baseline and tuned models only on the held-out data.
 
 ## Limits
 
-This is a modelling exercise over a historical dataset, not a structural-design recommendation. Search outcomes can vary with seed, search budget, feature availability, and the train/test split.
+This model is not a structural-design recommendation. It works on historical data, and its results can move when the seed, search budget, available features, or split changes.

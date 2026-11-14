@@ -2,11 +2,11 @@
 
 ## Problem
 
-Explore composition–property modelling for Fe–Ni–Co alloys, then search feasible compositions that balance predicted magnetic-property objectives.
+I wanted to see whether a model could learn from Fe–Ni–Co compositions, then search within sensible composition limits for promising magnetic-property trade-offs.
 
 ## Approach
 
-The workflow converts composition columns into formula-based and composition-derived features, fits tree-based regression models, and uses constrained Bayesian optimisation over Fe, Co, and Ni proportions. Every candidate is checked for non-negative fractions and a 100 at.% total before evaluation.
+I turned the composition columns into features, trained tree-based regressors, and used Bayesian optimisation over Fe, Co, and Ni. Before each prediction, I checked that all values were non-negative and added to 100 at.%.
 
 ## Skills
 
@@ -17,12 +17,12 @@ The workflow converts composition columns into formula-based and composition-der
 
 ## Source and data
 
-The local working dataset is a Fe–Ni–Co composition/property table used for this case study. It is not redistributed here while data-use terms are being confirmed. The public project will include a documented schema and a synthetic/example input path before release.
+I used a local Fe–Ni–Co composition/property table. I am not sharing that file until I have confirmed its reuse terms. The public code will use a documented schema and an example input first.
 
 ## Reproduce
 
-Run the documented environment setup from the repository root, then use the project script/notebook once the reviewed input data has been supplied. The optimisation path must validate each composition constraint before making a model prediction.
+Set up the environment from the repository root, then provide data matching the documented schema. The search code checks every composition before it asks the model for a prediction.
 
 ## Limits
 
-Predictions are model estimates within observed composition ranges, not experimentally validated material discoveries. Results depend on data coverage, feature construction, split design, and the objective weighting; no laboratory-performance claim is made.
+These are model estimates inside the composition ranges I gave the model, not new material discoveries. Results depend on the data, features, train/test split, and how I weight the objectives. I did not run laboratory validation.

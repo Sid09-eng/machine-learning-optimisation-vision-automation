@@ -58,6 +58,26 @@ class PublicRepositoryTests(unittest.TestCase):
         for relative_path in expected_artifacts:
             self.assertTrue((ROOT / relative_path).exists(), f"Missing public artifact: {relative_path}")
 
+    def test_public_copy_avoids_generic_portfolio_language(self):
+        visible_docs = [
+            ROOT / "README.md",
+            ROOT / "docs" / "portfolio-methodology.md",
+            *sorted((ROOT / "projects").glob("*/README.md")),
+        ]
+        template_phrases = (
+            "curated",
+            "case study",
+            "working principles",
+            "portfolio curation",
+            "portfolio-safe",
+            "scope statement",
+        )
+
+        for path in visible_docs:
+            text = path.read_text(encoding="utf-8").lower()
+            for phrase in template_phrases:
+                self.assertNotIn(phrase, text, f"{path.relative_to(ROOT)} uses generic phrase: {phrase}")
+
 
 if __name__ == "__main__":
     unittest.main()
