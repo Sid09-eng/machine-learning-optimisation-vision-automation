@@ -1,0 +1,13 @@
+# Common dependencies for portfolio case studies.
+numpy>=1.26,<3
+pandas>=2.2,<3
+scikit-learn>=1.5,<2
+scikit-optimize>=0.10,<1
+matplotlib>=3.8,<4
+seaborn>=0.13,<1
+opencv-python>=4.9,<5
+tensorflow>=2.16,<3
+opentrons>=7,<9
+
+# Read legacy concrete input files when using that case study.
+xlrd>=2,<3

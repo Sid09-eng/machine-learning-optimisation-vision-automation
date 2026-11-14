@@ -1,0 +1,44 @@
+# Private configuration and local tooling
+.env
+.env.*
+!.env.example
+.venv/
+.coursework-venv/
+.week7-venv/
+.coursework-keras/
+.pytest_cache/
+__pycache__/
+**/__pycache__/
+.DS_Store
+**/.DS_Store
+
+# Generated notebooks and model artefacts
+*.ipynb_checkpoints/
+*.pyc
+*.h5
+*.keras
+*.joblib
+
+# Private coursework source archive: publish reviewed copies under projects/ only
+/assignment/
+/Final CA/
+/week8/
+/concrete+compressive+strength/
+/*.ipynb
+/*.pdf
+/*.xls
+/*.xlsx
+/Concrete_Data.xls
+/Cats_image.jpeg
+/U2223021B.py
+/protocol_modified_demo.py
+/protocol_modified_demo_smart.py
+/build_week4_notebook.py
+/tools/
+
+# Replace old coursework checks with public-repository checks
+/tests/*
+!/tests/test_public_repository.py
+
+# Keep planning notes local; public documentation belongs outside this directory
+/docs/plans/
