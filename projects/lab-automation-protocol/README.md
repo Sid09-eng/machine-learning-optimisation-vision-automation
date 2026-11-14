@@ -25,9 +25,9 @@ The layout below is generated directly from the committed 250 µL volume matrix.
 
 ![Mirrored 96-well colour-gradient plate plan](assets/gradient-plate-layout.svg)
 
-## What I learned
+## Engineering judgement
 
-I learned that robot code needs more than a loop that runs. The deck position, labware names, starting tip, per-well totals, source order, and contamination strategy all need to be visible and checkable before a run.
+The protocol is written to be reviewed before hardware moves. Deck slots, labware identifiers, starting tip, per-well totals, source order, and carryover controls are explicit because a loop that runs is not enough for a reliable robot run.
 
 ## Evidence
 

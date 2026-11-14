@@ -37,8 +37,9 @@ class PublicEvidenceTests(unittest.TestCase):
 
         for project in PROJECTS:
             text = (ROOT / "projects" / project / "README.md").read_text(encoding="utf-8").lower()
-            for heading in ("## what i did", "## result", "## what i learned", "## evidence"):
+            for heading in ("## what i did", "## result", "## engineering judgement", "## evidence"):
                 self.assertIn(heading, text, f"{project} is missing {heading}")
+            self.assertNotIn("## what i learned", text, f"{project} uses a student-style heading")
             for blocked in ("matriculation", "homework", "in-class", "assignment"):
                 self.assertNotIn(blocked, text, f"{project} exposes coursework label: {blocked}")
 

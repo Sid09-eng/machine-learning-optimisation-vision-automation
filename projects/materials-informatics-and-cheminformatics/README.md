@@ -29,9 +29,9 @@ The band-gap model reached held-out R² **0.712** and the formation-energy model
 
 ![Distribution of calculated molecular LogP values](assets/logp-distribution.png)
 
-## What I learned
+## Engineering judgement
 
-I learned that a shared feature pipeline does not guarantee equal performance across targets. Formation energy and band gap were useful fits here; bulk modulus was not. I also learned how to separate live API access from local analysis so an API key never needs to be in source control.
+A shared feature pipeline did not make every target equally predictable. Formation energy and band gap were useful fits in this split; bulk modulus was not. I kept the weak result visible and separated live API access from local analysis so credentials never enter source control.
 
 ## Evidence
 

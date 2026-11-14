@@ -27,9 +27,9 @@ The default Gaussian process did not generalise: its held-out R² was **-49.990*
 
 ![Distribution of concrete compressive strength in the working data](assets/strength-distribution.png)
 
-## What I learned
+## Engineering judgement
 
-I learned not to trust an almost-perfect training plot. The default GP looked good on its training data and failed badly on the test data. Comparing kernels and keeping a separate test split made that clear. Bayesian search then gave me a disciplined way to spend a limited tuning budget.
+The default GP failure was worth keeping because it exposed a generalisation problem that a training plot hid. I compared kernels on held-out data before moving to Bayesian search, then used cross-validation to spend the tuning budget on settings with evidence behind them.
 
 ## Evidence
 

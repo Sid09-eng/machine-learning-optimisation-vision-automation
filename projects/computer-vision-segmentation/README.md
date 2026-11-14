@@ -23,9 +23,9 @@ I compared a fixed threshold with a sequence of Gaussian blur, Otsu thresholding
 
 The fixed-threshold baseline produced **2,093** contours. After blur, Otsu thresholding, opening, and closing, the pipeline produced **12**. That is not a universal accuracy score; it is a concrete sign that the later mask contained fewer small fragments on this image.
 
-## What I learned
+## Engineering judgement
 
-I learned to inspect intermediate masks instead of jumping straight from an image to a contour count. Blur changes local texture, Otsu chooses a data-driven threshold, opening removes small isolated regions, and closing repairs small holes. Each step made the final mask easier to explain.
+Contour count is a downstream signal, so I checked each mask before using it. Blur reduced texture noise, Otsu set the threshold from the image, opening removed isolated fragments, and closing repaired gaps. That sequence made the final contour change explainable rather than accidental.
 
 ## Evidence
 

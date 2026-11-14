@@ -29,9 +29,9 @@ Fashion cVAE validation loss fell from **261.115** after the first epoch to **24
 
 ![PCA and t-SNE views of unlabelled MNIST latent means](assets/mnist-latent-space.png)
 
-## What I learned
+## Engineering judgement
 
-I learned how conditioning changes a VAE: the same latent point can be decoded with different labels. I also learned that loss curves and sample grids answer different questions. Lower loss is useful, but generated images still need a visual check.
+Conditioning lets the decoder use the same latent point with different requested classes. The loss curve checks training movement; the sample grid checks whether that movement makes visual sense. After five epochs, the pipeline worked but the outputs were still too rough to present as finished designs.
 
 ## Evidence
 

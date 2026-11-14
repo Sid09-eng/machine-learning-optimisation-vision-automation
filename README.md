@@ -1,8 +1,8 @@
 # Machine Learning for Optimisation, Vision & Automation
 
-Hands-on work in machine learning, Bayesian optimisation, computer vision, generative AI, materials informatics, and laboratory automation.
+Selected implementation work in machine learning, Bayesian optimisation, computer vision, generative AI, materials informatics, and laboratory automation.
 
-I built these projects while learning how to apply ML to real technical problems. I cleaned up the parts worth showing, kept the code readable, and left out notes, local files, and anything private.
+This repository shows how I work from data and baseline models through model selection, result checks, constraints, and clear limits. Each project keeps the code, figures, and numbers needed to review the technical decision behind it.
 
 ## Selected projects
 
@@ -23,7 +23,7 @@ I built these projects while learning how to apply ML to real technical problems
 - **Image processing:** blur, Otsu thresholding, and morphology reduced detected contours from **2,093** to **12** on the local test image.
 - **Materials data:** formation-energy model test R² reached **0.924**; the band-gap model reached **0.712**. Bulk-modulus generalisation was weak, which is recorded rather than hidden.
 
-Every figure and number above is mapped to an executed local output in [evidence notes](docs/evidence.md). [Learning path](docs/learning-path.md) explains how the work connects.
+Every figure and number above is mapped to an executed local output in [evidence notes](docs/evidence.md). [Technical progression](docs/learning-path.md) shows how the work connects.
 
 ## How I work
 

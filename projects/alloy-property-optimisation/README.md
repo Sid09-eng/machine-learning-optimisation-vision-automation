@@ -27,9 +27,9 @@ The seven held-out property models gave R² values from **0.777** (`logER`) to *
 
 ![Features used most by the fitted logTc random-forest model](assets/logtc-feature-importance.png)
 
-## What I learned
+## Engineering judgement
 
-I learned that a strong random-forest fit is not enough by itself. I needed held-out numbers, feature names kept in the right order, and constraints in the search loop. The feature plot also gave me a way to inspect what the fitted model relied on instead of treating it as a black box.
+A high R² is useful only if the inference path keeps the same feature order and the search cannot leave the feasible composition region. I kept constraint validation beside prediction, not as a separate manual check. The importance chart is a fitted-model diagnostic, not a causal materials claim.
 
 ## Evidence
 
