@@ -17,7 +17,7 @@ class PublicRepositoryTests(unittest.TestCase):
 
         readme_text = readme.read_text(encoding="utf-8")
         ignore_text = gitignore.read_text(encoding="utf-8")
-        self.assertIn("# Applied ML & Materials Portfolio", readme_text)
+        self.assertIn("# Machine Learning for Optimisation, Vision & Automation", readme_text)
         self.assertIn("projects/", readme_text)
         for required_rule in (".env", ".venv/", ".coursework-venv/", ".week7-venv/", "/tools/"):
             self.assertIn(required_rule, ignore_text)

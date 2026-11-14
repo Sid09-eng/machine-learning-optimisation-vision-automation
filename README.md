@@ -1,4 +1,4 @@
-# Applied ML & Materials Portfolio
+# Machine Learning for Optimisation, Vision & Automation
 
 Hands-on work in machine learning, Bayesian optimisation, computer vision, generative AI, materials informatics, and laboratory automation.
 
