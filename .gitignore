@@ -39,6 +39,7 @@ __pycache__/
 # Replace old coursework checks with public-repository checks
 /tests/*
 !/tests/test_public_repository.py
+!/tests/test_public_evidence.py
 
 # Keep planning notes local; public documentation belongs outside this directory
 /docs/plans/

@@ -15,6 +15,26 @@ I turned the composition columns into features, trained tree-based regressors, a
 - Constrained Bayesian optimisation with reproducible search bounds
 - Model persistence and feature-order validation
 
+## What I did
+
+I built composition and alloy-specific features, trained one random-forest model per property, compared training and held-out results, then tuned the two magnetic-property models used by the composition search. I also checked every proposed Fe–Co–Ni mixture before prediction so the search could not suggest a negative percentage or a total other than 100 at.%.
+
+## Result
+
+The seven held-out property models gave R² values from **0.777** (`logER`) to **0.986** (`logCost`). The tuned `Ms` model reached test R² **0.969** with RMSE **0.088**; tuned `logTc` reached test R² **0.975** with RMSE **0.018**. The constrained search returned Fe 80.394 at.%, Co 19.571 at.%, and Ni 0.035 at.% for its chosen prediction target. This is a model output, not a material I made in a lab.
+
+![Measured and predicted values for seven alloy properties](assets/test-predictions.png)
+
+![Features used most by the fitted logTc random-forest model](assets/logtc-feature-importance.png)
+
+## What I learned
+
+I learned that a strong random-forest fit is not enough by itself. I needed held-out numbers, feature names kept in the right order, and constraints in the search loop. The feature plot also gave me a way to inspect what the fitted model relied on instead of treating it as a black box.
+
+## Evidence
+
+Figure sources and exact output cells are listed in [evidence notes](../../docs/evidence.md). The constraint checks are in [composition_constraints.py](composition_constraints.py).
+
 ## Source and data
 
 I used a local Fe–Ni–Co composition/property table. I am not sharing that file until I have confirmed its reuse terms. The public code will use a documented schema and an example input first.

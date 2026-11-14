@@ -15,6 +15,24 @@ Four source colours fill the first row with set volumes. The second row runs in 
 - Volume accounting and plate-coordinate mapping
 - Experimental automation documentation
 
+## What I did
+
+I defined explicit red, yellow, green, and blue volumes for twelve wells, then applied the same gradient in reverse on the second plate row. The code picks up one fresh tip for each source colour and dispenses only non-zero volumes.
+
+## Result
+
+The layout below is generated directly from the committed 250 µL volume matrix. Row B moves from red to blue. Row C mirrors it, so a person checking the plate can quickly see whether the planned pattern is right.
+
+![Mirrored 96-well colour-gradient plate plan](assets/gradient-plate-layout.svg)
+
+## What I learned
+
+I learned that robot code needs more than a loop that runs. The deck position, labware names, starting tip, per-well totals, source order, and contamination strategy all need to be visible and checkable before a run.
+
+## Evidence
+
+The diagram maps directly to `SOURCE_WELLS`, `GRADIENT_UL`, and `TOTAL_VOLUME_UL` in [rainbow_gradient.py](rainbow_gradient.py). It is a dispensing plan, not proof of a physical robot run.
+
 ## Source and data
 
 I wrote the protocol against the Opentrons API using named standard labware. It does not include private results or hardware logs.

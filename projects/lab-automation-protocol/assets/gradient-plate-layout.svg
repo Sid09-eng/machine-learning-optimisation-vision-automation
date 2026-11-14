@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="330" viewBox="0 0 1020 330" role="img" aria-labelledby="title description">
+  <title id="title">Mirrored 96-well colour-gradient dispensing plan</title>
+  <desc id="description">Rows B and C of a 96-well plate. Every well totals 250 microlitres. Row C is the physical mirror of row B.</desc>
+  <rect width="1020" height="330" fill="#f8fafc"/>
+  <text x="40" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Mirrored colour-gradient plate plan</text>
+  <text x="40" y="70" font-family="Arial, sans-serif" font-size="14" fill="#475569">Rows B and C only · every well totals 250 µL · one fresh tip per source colour</text>
+  <text x="40" y="126" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">B</text>
+  <text x="40" y="216" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">C</text>
+  <g font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0f172a">
+    <g stroke="#ffffff" stroke-width="2">
+      <rect x="80" y="92" width="70" height="52" rx="8" fill="#ef4444"/><rect x="152" y="92" width="70" height="52" rx="8" fill="#f97316"/><rect x="224" y="92" width="70" height="52" rx="8" fill="#f59e0b"/><rect x="296" y="92" width="70" height="52" rx="8" fill="#facc15"/><rect x="368" y="92" width="70" height="52" rx="8" fill="#a3e635"/><rect x="440" y="92" width="70" height="52" rx="8" fill="#22c55e"/><rect x="512" y="92" width="70" height="52" rx="8" fill="#14b8a6"/><rect x="584" y="92" width="70" height="52" rx="8" fill="#06b6d4"/><rect x="656" y="92" width="70" height="52" rx="8" fill="#38bdf8"/><rect x="728" y="92" width="70" height="52" rx="8" fill="#3b82f6"/><rect x="800" y="92" width="70" height="52" rx="8" fill="#2563eb"/><rect x="872" y="92" width="70" height="52" rx="8" fill="#1d4ed8"/>
+      <rect x="80" y="182" width="70" height="52" rx="8" fill="#1d4ed8"/><rect x="152" y="182" width="70" height="52" rx="8" fill="#2563eb"/><rect x="224" y="182" width="70" height="52" rx="8" fill="#3b82f6"/><rect x="296" y="182" width="70" height="52" rx="8" fill="#38bdf8"/><rect x="368" y="182" width="70" height="52" rx="8" fill="#06b6d4"/><rect x="440" y="182" width="70" height="52" rx="8" fill="#14b8a6"/><rect x="512" y="182" width="70" height="52" rx="8" fill="#22c55e"/><rect x="584" y="182" width="70" height="52" rx="8" fill="#a3e635"/><rect x="656" y="182" width="70" height="52" rx="8" fill="#facc15"/><rect x="728" y="182" width="70" height="52" rx="8" fill="#f59e0b"/><rect x="800" y="182" width="70" height="52" rx="8" fill="#f97316"/><rect x="872" y="182" width="70" height="52" rx="8" fill="#ef4444"/>
+    </g>
+    <g fill="#0f172a">
+      <text x="115" y="122">B1</text><text x="187" y="122">B2</text><text x="259" y="122">B3</text><text x="331" y="122">B4</text><text x="403" y="122">B5</text><text x="475" y="122">B6</text><text x="547" y="122">B7</text><text x="619" y="122">B8</text><text x="691" y="122">B9</text><text x="763" y="122">B10</text><text x="835" y="122">B11</text><text x="907" y="122">B12</text>
+      <text x="115" y="212">C12</text><text x="187" y="212">C11</text><text x="259" y="212">C10</text><text x="331" y="212">C9</text><text x="403" y="212">C8</text><text x="475" y="212">C7</text><text x="547" y="212">C6</text><text x="619" y="212">C5</text><text x="691" y="212">C4</text><text x="763" y="212">C3</text><text x="835" y="212">C2</text><text x="907" y="212">C1</text>
+    </g>
+  </g>
+  <text x="40" y="288" font-family="Arial, sans-serif" font-size="13" fill="#475569">Sources: red A3 · yellow B3 · green A4 · blue B4. The code skips zero-volume transfers.</text>
+</svg>

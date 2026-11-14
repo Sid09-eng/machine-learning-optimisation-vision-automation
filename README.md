@@ -13,6 +13,17 @@ I built these projects while learning how to apply ML to real technical problems
 | [Conditional Generative Design](projects/conditional-generative-design/) | Explore conditioned image generation | TensorFlow/Keras, conditional VAE, latent-space analysis |
 | [Computer Vision Segmentation](projects/computer-vision-segmentation/) | Build an interpretable image-segmentation workflow | OpenCV, thresholding, morphology, contour analysis |
 | [Laboratory Automation Protocol](projects/lab-automation-protocol/) | Define a reproducible liquid-handling gradient | Python, Opentrons API, experimental automation |
+| [Materials Informatics & Cheminformatics](projects/materials-informatics-and-cheminformatics/) | Learn from material compositions and inspect molecular properties | CBFV, neural regression, RDKit, data pipelines |
+
+## Result highlights
+
+- **Alloy property models:** held-out R² reached **0.986** across seven predicted properties; tuned `Ms` and `logTc` models reached **0.969** and **0.975**.
+- **Concrete-strength optimisation:** the best Gaussian-process configuration reached test R² **0.809**; Bayesian tuning found a gradient-boosting setup with 3-fold CV MSE **22.543**.
+- **Generative modelling:** Fashion cVAE validation loss fell from **261.115** to **243.129** over five epochs. The saved grid shows what the short run produced, including its rough edges.
+- **Image processing:** blur, Otsu thresholding, and morphology reduced detected contours from **2,093** to **12** on the local test image.
+- **Materials data:** formation-energy model test R² reached **0.924**; the band-gap model reached **0.712**. Bulk-modulus generalisation was weak, which is recorded rather than hidden.
+
+Every figure and number above is mapped to an executed local output in [evidence notes](docs/evidence.md). [Learning path](docs/learning-path.md) explains how the work connects.
 
 ## How I work
 
