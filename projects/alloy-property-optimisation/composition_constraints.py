@@ -18,7 +18,7 @@ def is_feasible(composition: Mapping[str, float], tolerance: float = 1e-9) -> bo
     if set(composition) != set(ELEMENTS):
         return False
     values = tuple(composition[element] for element in ELEMENTS)
-    if not all(isinstance(value, (int, float)) for value in values):
+    if not all(isinstance(value, (int, float)) and not isinstance(value, bool) for value in values):
         return False
     return all(value >= 0 for value in values) and abs(sum(values) - 100.0) <= tolerance
 

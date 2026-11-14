@@ -37,9 +37,9 @@ The diagram maps directly to `SOURCE_WELLS`, `GRADIENT_UL`, and `TOTAL_VOLUME_UL
 
 I wrote the protocol against the Opentrons API using named standard labware. It does not include private results or hardware logs.
 
-## Reproduce
+## Public scope
 
-Check the deck, labware, pipette, reservoir, and starting-tip settings in the protocol. Run the Opentrons simulator and complete local safety checks before using a robot.
+The complete protocol source and plate plan are public. Running it still requires the Opentrons simulator or a configured robot environment, plus local laboratory review before any physical run.
 
 ## Limits
 

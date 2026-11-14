@@ -40,10 +40,12 @@ docs/         Notes on how I review what goes public
 tests/        Checks for the public files
 ```
 
-## Reproducibility
+## Public scope
 
-Each project has its own setup notes, data details, and a way to check it. Work that needs an API key is optional; keys are never included here.
+This is a reviewed evidence and selected-source repository, not a release of every original notebook, dataset, model file, or API response. Project pages state exactly what is public, what remains local, and why. The checked source modules and public documentation can be tested with:
 
-## Status
+```bash
+python3 -m unittest discover -s tests -p 'test_*.py' -v
+```
 
-I will add more only after I have checked the files, wording, and data permissions.
+GitHub Actions runs the same checks on pushes and pull requests.

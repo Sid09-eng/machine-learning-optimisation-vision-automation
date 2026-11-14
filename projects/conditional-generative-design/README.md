@@ -41,9 +41,9 @@ Figure sources and training outputs are listed in [evidence notes](../../docs/ev
 
 I load Fashion-MNIST through Keras. I left out local caches and trained weights; the data can be downloaded through the loader.
 
-## Reproduce
+## Public scope
 
-Create the Python environment, let Keras download Fashion-MNIST on the first run, set the seed, and train the smaller configuration. Save fresh image grids instead of relying on files from my machine.
+This repository includes the input-preparation module, reviewed figures, and source-output map. The full model architecture and training notebook are not public, so these figures show a checked run rather than a packaged training implementation.
 
 ## Limits
 

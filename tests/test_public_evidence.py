@@ -45,6 +45,8 @@ class PublicEvidenceTests(unittest.TestCase):
 
         root_readme = (ROOT / "README.md").read_text(encoding="utf-8").lower()
         self.assertIn("## result highlights", root_readme)
+        self.assertIn("## public scope", root_readme)
+        self.assertNotIn("## status", root_readme)
         evidence = (ROOT / "docs/evidence.md").read_text(encoding="utf-8").lower()
         self.assertIn("source output", evidence)
 

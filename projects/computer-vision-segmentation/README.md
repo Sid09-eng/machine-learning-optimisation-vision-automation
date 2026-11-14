@@ -35,9 +35,9 @@ The source photo and before/after figure are not published because I have not co
 
 I have not included the original image because I do not know whether it can be redistributed. The script takes a user-provided image and states what format it expects.
 
-## Reproduce
+## Public scope
 
-Install OpenCV from the root dependency list, give the script an image path, then check the masks before treating the contour count as meaningful.
+The complete segmentation module is public and accepts a user-provided image after installing the listed dependencies. The source photograph and its before/after image stay local because redistribution rights are not confirmed.
 
 ## Limits
 

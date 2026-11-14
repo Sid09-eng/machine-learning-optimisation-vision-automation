@@ -41,9 +41,9 @@ The public repository contains no API key or cached API response. Figure sources
 
 The original data query ran against the Materials Project API in a local environment. The raw response cache is excluded because it is large and is not needed to understand the public result figures.
 
-## Reproduce
+## Public scope
 
-Use your own Materials Project API key through an untracked environment file, obtain data under the provider's terms, then run the same feature and model steps described above.
+This repository includes figures and a source-output map, but not the live query, raw response cache, feature-generation pipeline, or model-training notebook. Those pieces remain local because they depend on provider terms, an API key, and a large cache.
 
 ## Limits
 

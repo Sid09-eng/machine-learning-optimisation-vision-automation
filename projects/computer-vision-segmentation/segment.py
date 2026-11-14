@@ -10,7 +10,10 @@ import numpy as np
 
 def segment_image(image_path: str | Path, kernel_size: int = 5) -> dict[str, np.ndarray | int]:
     """Segment an image with blur, Otsu thresholding, morphology, and contours."""
-    image = cv2.imread(str(image_path), cv2.IMREAD_COLOR)
+    path = Path(image_path)
+    if not path.is_file():
+        raise FileNotFoundError(f"Could not read image: {image_path}")
+    image = cv2.imread(str(path), cv2.IMREAD_COLOR)
     if image is None:
         raise FileNotFoundError(f"Could not read image: {image_path}")
     if kernel_size < 3 or kernel_size % 2 == 0:

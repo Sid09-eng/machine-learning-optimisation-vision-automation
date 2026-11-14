@@ -39,9 +39,9 @@ Figure sources and exact output cells are listed in [evidence notes](../../docs/
 
 I used a local Fe–Ni–Co composition/property table. I am not sharing that file until I have confirmed its reuse terms. The public code will use a documented schema and an example input first.
 
-## Reproduce
+## Public scope
 
-Set up the environment from the repository root, then provide data matching the documented schema. The search code checks every composition before it asks the model for a prediction.
+This repository includes the figures, metric source map, and composition-constraint module. The local input table and full training/search notebook are not public, so this page is evidence for a reviewed result rather than a runnable training release.
 
 ## Limits
 

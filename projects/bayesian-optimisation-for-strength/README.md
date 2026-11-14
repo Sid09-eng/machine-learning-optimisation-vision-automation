@@ -39,9 +39,9 @@ Figure sources and output-backed settings are listed in [evidence notes](../../d
 
 I used the UCI Concrete Compressive Strength data provided with my local files. Before sharing a data copy, I will confirm the source details and list the expected columns.
 
-## Reproduce
+## Public scope
 
-Install the root dependencies, add the concrete data file described here, and run with the fixed split seed. Compare baseline and tuned models only on the held-out data.
+This repository includes the held-out metric helper, reviewed figures, and source-output map. The concrete data file and full optimisation notebook are not public, so the recorded result can be reviewed but not rebuilt from this repository alone.
 
 ## Limits
 

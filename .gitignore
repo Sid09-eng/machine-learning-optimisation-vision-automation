@@ -40,6 +40,7 @@ __pycache__/
 /tests/*
 !/tests/test_public_repository.py
 !/tests/test_public_evidence.py
+!/tests/test_project_logic.py
 
 # Keep planning notes local; public documentation belongs outside this directory
 /docs/plans/

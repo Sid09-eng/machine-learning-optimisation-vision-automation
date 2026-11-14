@@ -30,7 +30,7 @@ class PublicRepositoryTests(unittest.TestCase):
             "computer-vision-segmentation",
             "lab-automation-protocol",
         )
-        required_sections = ("## Problem", "## Approach", "## Skills", "## Reproduce", "## Limits")
+        required_sections = ("## Problem", "## Approach", "## Skills", "## Public scope", "## Limits")
         forbidden_coursework_labels = ("matriculation", "homework", "in-class", "assignment")
 
         for project in projects:
@@ -51,6 +51,8 @@ class PublicRepositoryTests(unittest.TestCase):
             "projects/computer-vision-segmentation/segment.py",
             "projects/lab-automation-protocol/rainbow_gradient.py",
             "requirements.txt",
+            ".github/workflows/public-checks.yml",
+            "tests/test_project_logic.py",
             "docs/portfolio-methodology.md",
             "LICENSE",
         )
